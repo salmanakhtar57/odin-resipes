@@ -1,10 +1,10 @@
 body {
-    background-color: lightblue;
+    background-color: lightcyan;
     text-align: none;
 }
 *{
     box-sizing: border-box;
-    color: blue;
+    color: black;
     /* border: 2px solid blue; */
 }
 div{
@@ -15,17 +15,23 @@ div{
   --animate-delay: 1s;
   --animate-repeat: 1;
 }
+.header {
+  text-align: center;
 
+}
+
+ul {
+  list-style-type: none;
+}
 .heading {
-  /* padding-top: 20px; */
   box-sizing: border-box;
   display: block;
-  /* padding-top: 8%; */
   font-size: 30px;
   font-weight: 900;
   color: black;
   margin-bottom: 1%;
   margin-top: 0%;
+  text-align: center;
 }
 
 @media screen and (min-width: 601px) {
@@ -33,45 +39,20 @@ div{
       font-size: 80px;
   }
 }
-.list{
-  border: 0px solid blue;
-    padding-left: 1px;
-    padding-right: 80%;
-    background-color: lightgray;
-    margin-top: auto;
-    margin-left: 50px;
-    margin-right: 60%;
-    box-sizing: border-box;
-    padding: 1%;
-    padding-right: 4%;
-    color: white;
-}
-
-@media screen and (min-width: 601px) {
-  div.example {
-      -webkit-text-size-adjust: 100%;
-      font-size: 80px;
-  }
-}
-.header {
-  box-sizing: border-box;
-  display: block;
-  /* padding-top: 8%; */
-  font-size: 30px;
-  font-weight: 900;
-  color: white;
-  margin-bottom: 0%;
-  /* background-color: aqua; */
-  color: #000;
-  
-  
-}
 
 @media screen and (min-width: 601px) {
   div.example {
       font-size: 80px;
   }
 }
-.wrapper{
-  
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
