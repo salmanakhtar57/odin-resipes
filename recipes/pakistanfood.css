@@ -1,0 +1,30 @@
+body {
+    background-color: aquamarine;
+}
+
+.header {
+    text-align: center;
+    box-sizing: border-box;
+  display: block;
+  font-size: 50px;
+  font-weight: 900;
+  color: black;
+  margin-bottom: 1%;
+  margin-top: 0%;
+}
+
+.flex-container {
+    display: flex;
+  }
+  
+  /* this selector selects all divs inside of .flex-container */
+  .flex-container div {
+    height: 100%;
+    width: 100%;
+    flex: 1 1 auto;
+    text-align: left;
+  }
+  
+  .flex-container .two {
+    flex-shrink: 1px;
+  }
