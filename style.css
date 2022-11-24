@@ -2,27 +2,29 @@ body {
     background-color: lightcyan;
     text-align: none;
 }
-*{
+* {
     box-sizing: border-box;
     color: black;
-    /* border: 2px solid blue; */
 }
-div{
+
+div {
   color: white;
 }
+
 :root {
   --animate-duration: 1s;
   --animate-delay: 1s;
   --animate-repeat: 1;
 }
+
 .header {
   text-align: center;
-
 }
 
 ul {
   list-style-type: none;
 }
+
 .heading {
   box-sizing: border-box;
   display: block;
@@ -45,6 +47,7 @@ ul {
       font-size: 80px;
   }
 }
+
 .column {
   float: left;
   width: 33.33%;
